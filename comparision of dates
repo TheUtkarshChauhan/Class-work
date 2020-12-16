@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+struct date
+{
+    int year,month,day;
+}d1,d2;
+
+void main()
+{
+    printf("Enter Date 1(dd/mm/yy) :");
+    scanf("%d %d %d",&d1.year,&d1.month,&d1.day);
+    printf("\nEnter Date 2(dd/mm/yy) :");
+    scanf("%d %d %d",&d2.year,&d2.month,&d2.day);
+    
+    if(d1.year==d2.year && d1.month==d2.month && d1.day==d2.day)
+        printf("DATES ARE SAME!");
+    else
+        printf("DATES ARE NOT SAME!");
+}
